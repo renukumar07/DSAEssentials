@@ -2,16 +2,16 @@
 using namespace std;
 
 int binary_search(int arr[], int size, int key) {
-    int low = 0;
-    int high = size - 1;
-    while (low <= high) {
-        int mid = (low + high) / 2;
+    int start = 0;
+    int end = size - 1;
+    while (start <= end) {
+        int mid = (start + end) / 2;
         if (arr[mid] == key) {
             return mid;
         } else if (arr[mid] > key) {
-            high = mid - 1;
+            end = mid - 1;
         } else {
-            low = mid + 1;
+            start = mid + 1;
         }
     }
     return -1;
