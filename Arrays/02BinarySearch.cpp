@@ -23,8 +23,10 @@ int main() {
     cout << "Please enter to search: ";
     cin >> key;
     int index = binary_search(arr, size, key);
-    if (index != -1)
+    if (index != -1) {
         cout << key << " is present at index " << index << endl;
-    else
+    } else {
         cout << key << " is NOT FOUND!" << endl;
+    }
+    return 0;
 }
