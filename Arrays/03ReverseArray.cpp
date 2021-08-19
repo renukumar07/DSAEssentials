@@ -20,7 +20,7 @@ void reverse_array(int arr[], int size) {
         end -= 1;
     }
 }
-void printArray(int arr[], int size) {
+void print_array(int arr[], int size) {
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
@@ -31,12 +31,12 @@ int main() {
     int size = sizeof(arr) / sizeof(int);
 
     cout << "Before Reversing array" << endl;
-    printArray(arr, size);
+    print_array(arr, size);
 
     reverse_array(arr, size);
 
     cout << "After Reversing array" << endl;
-    printArray(arr, size);
+    print_array(arr, size);
 
     return 0;
 }
